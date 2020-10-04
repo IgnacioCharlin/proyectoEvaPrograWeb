@@ -1,0 +1,273 @@
+/** Globales **/
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/** Header **/
+
+.contenedor{
+    width: 100%;
+    background-color: rgb(40, 105, 105);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    list-style: none;
+    position: fixed;
+    z-index: 100;
+    
+}
+
+.icono{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+.icono h1{
+    margin-left: 7px;
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.icono i{
+    font-size: 1.8rem;
+}
+
+.buscador {
+    display: flex;
+    flex-basis: 30rem;
+    align-items: center;
+}
+.buscador label{
+    padding-left: 5px;
+    font-size: 1rem;
+    background-color: #1c5050;
+    padding: 4.7px 6px;
+}
+.buscador input{
+    padding: 0.3rem;
+    width: 100%;
+}
+.redes{
+    padding-right: 1rem;
+}
+.redes a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-right: 5px;
+}
+.redes a:hover{
+    color:#80401b;
+}
+.slider img{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+/** Main Acerca  **/
+
+.contenido-principal{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: 2.5rem;
+}
+.titulares{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 2.3rem;
+}
+
+.card h3{
+    background-color: #8b4720;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+.card h3:hover{
+    background-color: #633114;
+    transition: background-color .2s;
+}
+.card a{
+    color: white;
+    text-decoration: none;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.card img{
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+}
+
+/** Main llamado **/
+
+.llama{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1c5050;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+}
+.llama p{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.4rem;
+}
+
+.llama h3{
+    font-family: 'Comfortaa', cursive;
+    font-size: 3rem;
+    padding-top: 1.5rem;
+}
+
+.llama span{
+    font-size: 6.5rem;
+    padding-right: 1rem;
+}
+.llamado{
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    font-size: 5rem;
+    align-items: center;
+}
+
+/** Footer **/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 1.3rem 5rem;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.integrantes h3{
+    text-align: center;
+    padding-bottom: 0.8rem;
+}
+.menu-inferior{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.menu-inferior h3{
+    padding-bottom: 0.8rem;
+}
+.menu-inferior a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-inferior a:hover{
+    color: #80401b;
+}
+.redes-sociales h3{
+    padding-bottom: 0.8rem;
+}
+.redes-sociales a{
+    color: white;
+    text-decoration: none;
+}
+.logo-redes{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+.redes-sociales a:hover{
+    color: #80401b;
+}
+
+/** Pagina enfermedades **/
+.barra-inferior-nav{
+    margin-top: 3.6rem;
+    background-color:rgba(36, 129, 129, 0.705) ;
+    padding: 1rem;
+}
+.barra-inferior{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    margin: auto;
+}
+.barra-inferior a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+.barra-inferior a:hover{
+    color: #80401b;
+    font-weight: bold;
+}
+.selector {
+    border-radius: 15px;
+    border-style: solid ;
+    border-color: rgba(128, 128, 128, 0.596);
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.281);
+    padding: 15px;
+    text-align: start;
+    margin-top: 2rem;
+    color: rgb(128, 128, 128);
+    margin-left: 10px;
+}
+.selector p{
+    margin-left: 10px;
+    font-family: 'Comfortaa', cursive;
+}
+.contenedor-cards{
+    margin-top: 2rem;
+}
+.card-enfermedades{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: calc(50% - 10px);
+}
+
+.card-enfermedades img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+.texto{
+    width: 60%;
+    text-align: start;
+    padding-left: 15px;
+    font-family: 'Comfortaa', cursive;
+}
+.texto h3{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.boton-detalle{
+    color: white;
+    text-decoration: none;
+    background-color:rgba(36, 129, 129, 0.705);
+    padding: 0.6rem;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.boton-detalle:hover{
+    background-color:#1c5050 ;
+    transition: background-color .2s;
+}
