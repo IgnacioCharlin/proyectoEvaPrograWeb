@@ -17,8 +17,12 @@
     align-items: center;
     list-style: none;
     position: fixed;
-    z-index: 100;
-    
+    z-index: 100;    
+}
+
+.contenedor-main{
+    width: 80%;
+    margin: auto;
 }
 
 .icono{
@@ -53,7 +57,7 @@
     width: 100%;
 }
 .redes{
-    padding-right: 1rem;
+    padding-right: 2rem;
 }
 .redes a{
     text-decoration: none;
@@ -270,4 +274,79 @@ footer{
 .boton-detalle:hover{
     background-color:#1c5050 ;
     transition: background-color .2s;
+}
+
+/** Pagina mapa **/
+.mapa-hospitales img{
+    width: 100%;
+    padding-top: 2.5rem;
+}
+
+/** Pagina covid**/
+
+.descipcion-covid{
+    display: flex;
+}
+.descipcion-covid img{
+    flex: 1;
+    height:15rem;
+    margin-right: 2rem;
+    border-radius: 15px;
+}
+.descipcion-covid p{
+   flex: 1;
+   font-family: 'Comfortaa', cursive;
+}
+section{
+    font-family: 'Comfortaa', cursive; 
+}
+section h3{
+    text-align: center;
+    padding: 2.5rem 0 1.5rem 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.formulario{
+    display: flex;
+}
+.descripcion-formulario{
+    flex: 1;
+    margin-right: 1.5rem;
+}
+.descripcion-formulario h4{
+    padding-top: 1rem;
+}
+.formulario-covid{
+    flex: 1;
+}
+.formulario-covid input{
+    border-radius: 5px;
+    margin: .2rem 0 .4rem 0;
+    padding: 2px;
+}
+.imagenes-sintomas{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.imagenes-sintomas img{
+    height: 150px;
+    width: 150px;
+}
+.input-nombre{
+    width: 98%;
+}
+.dni-telefono{
+    display: flex;
+    justify-content: space-between;
+}
+.dni{
+    display: flex;
+    flex-direction: column;
+}
+.telefono{
+    display: flex;
+    flex-direction: column;
 }
