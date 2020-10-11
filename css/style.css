@@ -43,7 +43,7 @@
 
 .buscador {
     display: flex;
-    flex-basis: 30rem;
+    width: calc(33% - 2em);
     align-items: center;
 }
 .buscador label{
