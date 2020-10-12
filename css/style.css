@@ -43,7 +43,7 @@
 
 .buscador {
     display: flex;
-    flex-basis: 30rem;
+    width: calc(33% - 2em);
     align-items: center;
 }
 .buscador label{
@@ -51,6 +51,9 @@
     font-size: 1rem;
     background-color: #1c5050;
     padding: 4.7px 6px;
+}
+.buscador label:hover{
+    color:#8FFFFF;
 }
 .buscador input{
     padding: 0.3rem;
@@ -64,9 +67,10 @@
     color: white;
     font-size: 20px;
     padding-right: 5px;
+    border-radius: 50%;
 }
 .redes a:hover{
-    color:#80401b;
+    color:#8FFFFF;
 }
 .slider img{
     width: 100%;
@@ -76,6 +80,7 @@
 /** Main Acerca  **/
 
 .contenido-principal{
+    
     text-align: center;
     width: 80%;
     margin: auto;
@@ -88,21 +93,25 @@
 }
 
 .card h3{
-    background-color: #8b4720;
+    background-color: #8C4B24;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 5px;
     border-radius: 8px;
     margin-top: 5px;
 }
 .card h3:hover{
-    background-color: #633114;
+    background-color: #8C4B24;
     transition: background-color .2s;
 }
 .card a{
     color: white;
     text-decoration: none;
+}
+.card1{
+    width: 225px;
+    height: 225px;
 }
 
 .imghospital{
@@ -114,13 +123,24 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    width: 100%;
     padding-top: 2rem;
     flex-wrap: wrap;
+<<<<<<< HEAD
     
+=======
+>>>>>>> agus
 }
 .card img{
+<<<<<<< HEAD
     width: calc(33% - 1em);
   
+=======
+    
+    width: calc(33% -1em);
+    
+    
+>>>>>>> agus
     border-radius: 150px;
 }
 
