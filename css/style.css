@@ -52,6 +52,9 @@
     background-color: #1c5050;
     padding: 4.7px 6px;
 }
+.buscador label:hover{
+    color:#8FFFFF;
+}
 .buscador input{
     padding: 0.3rem;
     width: 100%;
@@ -64,9 +67,10 @@
     color: white;
     font-size: 20px;
     padding-right: 5px;
+    border-radius: 50%;
 }
 .redes a:hover{
-    color:#80401b;
+    color:#8FFFFF;
 }
 .slider img{
     width: 100%;
@@ -89,7 +93,7 @@
 }
 
 .card h3{
-    background-color: #1c5050;
+    background-color: #8C4B24;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
@@ -98,7 +102,7 @@
     margin-top: 5px;
 }
 .card h3:hover{
-    background-color: #633114;
+    background-color: #8C4B24;
     transition: background-color .2s;
 }
 .card a{
