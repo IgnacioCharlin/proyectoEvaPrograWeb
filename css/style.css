@@ -38,7 +38,7 @@
     font-weight: lighter;
 }
 .icono i{
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
 
 .buscador {
@@ -52,7 +52,7 @@
     background-color: #1c5050;
     padding: 4.7px 6px;
 }
-.buscador label:hover{
+.buscador label:hover, .icono i:hover, .redes a:hover{
     color:#8FFFFF;
 }
 .buscador input{
@@ -69,9 +69,7 @@
     padding-right: 5px;
     border-radius: 50%;
 }
-.redes a:hover{
-    color:#8FFFFF;
-}
+
 .slider img{
     width: 100%;
     margin-top: 3rem;
@@ -126,21 +124,10 @@
     width: 100%;
     padding-top: 2rem;
     flex-wrap: wrap;
-<<<<<<< HEAD
-    
-=======
->>>>>>> agus
+
 }
 .card img{
-<<<<<<< HEAD
-    width: calc(33% - 1em);
-  
-=======
-    
     width: calc(33% -1em);
-    
-    
->>>>>>> agus
     border-radius: 150px;
 }
 
@@ -229,7 +216,8 @@ footer{
 .barra-inferior-nav{
     margin-top: 3.6rem;
     background-color:rgba(36, 129, 129, 0.705) ;
-    padding: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.2rem;
 }
 .barra-inferior{
     display: flex;
