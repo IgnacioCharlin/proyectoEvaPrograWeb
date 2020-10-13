@@ -324,17 +324,20 @@ section{
 }
 section h3{
     text-align: center;
-    padding: 2.5rem 0 1.5rem 0;
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: bold;
 }
 .formulario{
     display: flex;
+    margin-top: 1em;
 }
 .descripcion-formulario{
     flex: 1;
     margin-right: 1.5rem;
+}
+.covid-formulario{
+    padding-top: 2rem;
 }
 .descripcion-formulario h4{
     padding-top: 1rem;
@@ -345,13 +348,19 @@ section h3{
 .formulario-covid input{
     border-radius: 5px;
     margin: .2rem 0 .4rem 0;
+}
+.formulario-input{
     padding: 2px;
 }
-.imagenes-sintomas{
+.imagenes-sintomas-superior{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+.imagenes-sintomas-inferior{
+    display: flex;
+    justify-content: center;
 }
 .imagenes-sintomas img{
     height: 150px;
@@ -365,10 +374,143 @@ section h3{
     justify-content: space-between;
 }
 .dni{
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    padding-right: 1rem;
 }
 .telefono{
+    width: 100%;
+}
+.dni-telefono input{
+    width: 97%;
+}
+
+.ciudad-sexo{
+    display: flex;
+    align-items: center;
+}
+.ciudad{
     display: flex;
     flex-direction: column;
+    padding-right: 1.6em;
+    width: 47%;   
+}
+.ciudad input{
+    width: 100%;
+}
+
+.pais-visitados{
+    margin-top: 1em;
+}
+
+.has-viajado{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0.3em;
+}
+.has-viajado label{
+    margin-right: 0.2em;
+}
+.has-viajado input{
+    margin-right: 0.5em;
+}
+.selector-pais select{
+    width: 40%;
+}
+.sintomas{
+    margin-top: 1.6em;
+}
+.cuestionario{
+    display: flex;
+    align-content: center;
+}
+.preguntas{
+    width: 60em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.4em;
+}
+.preguntas label{
+    margin-top: 0.4em;
+}
+.respuestas{
+    width: 30em;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    margin-right: 0.4em;
+    font-size: 0.9em;
+    margin-top: 0.2em;
+}
+.flex input{
+    size: 0.8em;
+}
+.espacio{
+    margin-right: 0.4em;
+}
+
+.boton-formulario{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn{
+    background-color: rgba(36, 129, 129, 0.705);
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 1em;
+}
+.btn:hover{
+    background-color:#1c5050 ;
+    transition: background-color .2s;
+}
+
+.medidas-precaucion{
+    padding-top: 2em;
+}
+.imagenes-precaucion{
+    width: 100%;
+    margin-top: 1em;
+}
+
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.imagenes img{
+    width: 12em;
+    height: 12em;
+}
+
+aside h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.info-hospital{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Comfortaa', cursive;
+}
+.info-hospital H4{
+    margin-bottom: 0.6em;
+}
+.info-hospital p{
+    margin-bottom: 0.2em;
+}
+.mapa-hospital{
+    width: 60%;
+}
+.mapa-hospital iframe{
+    width: 100%;
+    height: 15em;
 }
