@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="js/covid.js"></script>
+
+
     <title>Covid-19</title>
 </head>
 
@@ -88,9 +92,9 @@
                     </div>
                 </article>
                 <article class="formulario-covid">
-                    <form action="">
+                    <form action="#" onsubmit="return validar()">
                         <label for="nombre">Nombre y Apellido</label><br>
-                        <input type="text" id="nombre" class="input-nombre formulario-input"
+                        <input type="text" id="nombre"  name="nombre" class="input-nombre formulario-input"
                             placeholder="Ingresa tu nombre y apellido"><br>
                         <div class="dni-telefono">
                             <div class="dni">
@@ -122,9 +126,9 @@
                             <div class="has-viajado">
                                 <label for="viajo">¿Has viajado al exterior de la República Argentina?</label><br>
                                 <label for="si">SI</label>
-                                <input type="radio" id="si viaje" name="viajo">
+                                <input type="radio" id="si viaje" name="viajo" value="si" onchange="cambiar('viajo', 'paises')">
                                 <label for="no">NO</label>
-                                <input type="radio" id="no viaje" name="viajo">
+                                <input type="radio" id="no viaje" name="viajo" value="no" onchange="cambiar('viajo', 'paises')">
                             </div>
                             <div class="selector-pais">
                                 <label for="paises">Países Visitados:</label>
@@ -146,37 +150,41 @@
                                     <label for="tos">¿Tuviste una tos persistente?</label>
                                     <label for="garganta">Tuviste Dolor de garganta?</label>
                                     <label for="respirar">¿Tuviste Dificultad para respirar?</label>
+                                    <div class="direccion" id="direccion">
+                                                <label for="direccion" >direccion: </label>
+                                                <input type="text"  placeholder="Ingresa tu direccion" class="formulario-input">
+                                    </div>
                                 </div>
                                 <div class="respuestas">
                                     <div class="flex">
-                                        <input type="radio" id="mayor" name="fiebre">
+                                        <input type="radio" id="mayor" value="si" name="fiebre">
                                         <label for="si" class="espacio">SI</label>
-                                        <input type="radio" id="menor" name="fiebre">
-                                        <label for="no">NO</label>
+                                        <input type="radio" id="menor" value="no" name="fiebre">
+                                        <label for="no">No</label>
                                     </div>
                                     <div class="flex">
-                                        <input type="radio" id="si tuve" name="cabeza">
+                                        <input type="radio" id="si tuve" value="si" name="cabeza">
                                         <label for="si" class="espacio">SI</label>
-                                        <input type="radio" id="no tuve" name="cabeza">
-                                        <label for="no">NO</label>
+                                        <input type="radio" id="no tuve" value="no" name="cabeza">
+                                        <label for="no">No</label>
                                     </div>
                                     <div class="flex">
-                                        <input type="radio" id="tos" name="tos">
+                                        <input type="radio" id="tos" value="si" name="tos">
                                         <label for="si" class="espacio">SI</label>
-                                        <input type="radio" id="no tos" name="tos">
-                                        <label for="no">NO</label>
+                                        <input type="radio" id="no tos" value="no" name="tos">
+                                        <label for="no">No</label>
                                     </div>
                                     <div class="flex">
-                                        <input type="radio" id="dolor" name="garganta">
+                                        <input type="radio" id="dolor" value="si" name="garganta">
                                         <label for="si" class="espacio">SI</label>
-                                        <input type="radio" id="sin dolor" name="garganta">
-                                        <label for="no">NO</label>
+                                        <input type="radio" id="sin dolor" value="no" name="garganta">
+                                        <label for="no">No</label>
                                     </div>
                                     <div class="flex">
-                                        <input type="radio" id="con dificultad" name="respirar">
+                                        <input type="radio" id="con dificultad" value="si" name="respirar" value="si" onchange="cambiar('respirar', 'direccion')">
                                         <label for="si" class="espacio">SI</label>
-                                        <input type="radio" id="sin" name="respirar">
-                                        <label for="no">NO</label>
+                                        <input type="radio" id="sin" value="no" name="respirar" value="no" onchange="cambiar('respirar', 'direccion')">
+                                        <label for="no">No</label>
                                     </div>
                                 </div>
                             </div>
@@ -184,6 +192,7 @@
                         <div class="boton-formulario">
                             <input type="submit" class="btn" value="Enviar test">
                         </div>
+                         <div id="mensaje" class="error"> </div>
                     </form>
                 </article>
             </div>
@@ -233,17 +242,17 @@
         </div>
         <div class="menu-inferior">
             <h3>Menu Inferior</h3>
-            <a href="enfermedades.html" target="_blank">Enfermedades</a>
-            <a href="#" target="_blank">Vacunas</a>
-            <a href="mapa-hospital.html" target="_blank">Hospitales</a>
-            <a href="#" target="_blank">Contacto</a>
+            <a href="enfermedades.html" >Enfermedades</a>
+            <a href="#" >Vacunas</a>
+            <a href="mapa-hospital.html" >Hospitales</a>
+            <a href="contacto.html">Contacto</a>
         </div>
         <div class="redes-sociales">
             <h3>Redes Sociales</h3>
             <div class="logo-redes">
-                <a href="#" target="_blank"><i class="fab fa-facebook uno"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter-square dos"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram tres"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook uno"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square dos"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram tres"></i></a>
             </div>
         </div>
 
