@@ -1,8 +1,8 @@
 var regexCampoNumerico=/^[0-9]+$/
 var regexCampoTexto=/^[a-z][A-Z]+$/
-var regexTelefono=/^[0-9]{4}-[0-9]{4}$/
-var regexEmail=/^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/
 
+var regexEmail=/^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/
+var regexTelefono=/^[0-9]{4}-[0-9]{4}$/
 function validar(){
     var error=false;
     var mensajesError="";

@@ -5,6 +5,11 @@
     overflow-x: hidden;
     
 }
+@media screen and (max-width:768px){
+    *{
+        overflow-x: visible;
+    }
+}
 
 /** Header **/
 
@@ -31,6 +36,15 @@
     text-decoration: none;
     color: white;
     align-items: center;
+    
+}
+@media screen and (max-width: 768px) {
+    .contenedor{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        position: relative;
+    }
 }
 .icono h1{
     margin-left: 7px;
@@ -64,6 +78,13 @@
     padding: 0.3rem;
     width: 100%;
 }
+@media screen and (max-width: 768px) {
+    .buscador{
+        margin: 1em  0em;
+        display: flex;
+        width: 50%;
+    }
+}    
 .redes{
     padding-right: 2rem;
 }
@@ -74,6 +95,15 @@
     padding-right: 5px;
     border-radius: 50%;
 }
+@media screen and (max-width: 768px) {
+    .redes{
+        padding-right: 0;
+    }
+    .redes a{
+        padding-right: 1em;
+        align-items: center;
+    }
+}
 
 .slider img{
     
@@ -82,6 +112,7 @@
     
     
 }
+
 
 /** Main Acerca  **/
 
@@ -96,6 +127,11 @@
     font-family: 'Comfortaa', cursive;
     font-weight: bolder;
     font-size: 2.3rem;
+}
+@media screen and (max-width:768px){
+    .titulares{
+        font-size: 1.8rem;
+    }
 }
 
 .card h3{
@@ -139,6 +175,16 @@
     border-radius: 150px;
 }
 
+@media screen and (max-width: 768px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card article{
+        margin-bottom: 2rem;
+    }
+}
 /** Main llamado **/
 
 .llama{
@@ -172,6 +218,24 @@
     font-size: 5rem;
     align-items: center;
 }
+@media screen and (max-width: 768px) {
+    .llama p{
+        font-size: 1rem;
+    }
+    .llama h3{
+        font-size: 1.5rem;
+    }
+    .llamado{
+        font-size: 2.5rem;
+    }
+    .llamado span{
+        font-size: 2.5rem;
+        padding-right: 0;
+    }
+    .llamado h2{
+        font-size: 2.5rem;
+    }
+}
 
 /** Footer **/
 
@@ -187,16 +251,13 @@ footer{
 
 .integrantes h3{
     text-align: center;
-    padding-bottom: 0.8rem;
-}
+}    
 .menu-inferior{
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.menu-inferior h3{
-    padding-bottom: 0.8rem;
-}
+
 .menu-inferior a{
     color: white;
     text-decoration: none;
@@ -205,9 +266,7 @@ footer{
 .menu-inferior a:hover{
     color: #80401b;
 }
-.redes-sociales h3{
-    padding-bottom: 0.8rem;
-}
+
 .redes-sociales a{
     color: white;
     text-decoration: none;
@@ -219,6 +278,21 @@ footer{
 }
 .redes-sociales a:hover{
     color: #80401b;
+}
+.titulo-footer{
+    padding-bottom: 0.8rem;
+}
+@media screen and (max-width: 768px) {
+    footer{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+    .titulo-footer{
+        padding-bottom: 0.2rem;
+        padding-top: 1rem;
+    }
 }
 
 /** Pagina enfermedades **/
@@ -243,6 +317,24 @@ footer{
     color: #80401b;
     font-weight: bold;
 }
+
+    @media screen and (max-width: 768px) {
+   
+    .barra-inferior-nav{
+        margin-top: 0;
+    }
+    .barra-inferior{
+        flex-direction: column;
+        text-align: center;
+    }
+    .barra-inferior a{
+        font-size: 1rem;
+    }
+    .barra-inferior li{
+        margin-top: 0.4em;
+        list-style: none;
+    }
+}
 .selector {
     border-radius: 15px;
     border-style: solid ;
@@ -266,6 +358,18 @@ footer{
     display: flex;
     justify-content: space-around;
     flex-basis: calc(50% - 10px);
+}
+@media screen and (max-width:768px){
+    .card-enfermedades{
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+    .enfermedades-tit{
+        font-size: 1.8rem;
+    }
+    .boton-detalle{
+        width: 90%;
+    }
 }
 
 .card-enfermedades img{
@@ -295,15 +399,28 @@ footer{
     margin-top: 20px;
     border-radius: 5px;
 }
+
 .boton-detalle:hover{
     background-color:#1c5050 ;
     transition: background-color .2s;
 }
+@media screen and (max-width:768px){
+    .texto{
+        width: 90%;
+        text-align: center;
+    }
+}
 
 /** Pagina mapa **/
-.mapa-hospitales img{
+.mapa iframe{
     width: 100%;
+    height: 40rem;
     padding-top: 2.5rem;
+}
+@media screen and (max-width:768px){
+    .mapa iframe{
+        height: 25rem;
+    }
 }
 
 /** Pagina covid**/
@@ -320,6 +437,17 @@ footer{
 .descipcion-covid p{
    flex: 1;
    font-family:'Comfortaa';
+}
+@media screen and (max-width:768px){
+    .descipcion-covid{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .descipcion-covid img{
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
 }
 section{
     font-family: 'Comfortaa', cursive; 
@@ -344,12 +472,24 @@ section h3{
 .descripcion-formulario h4{
     padding-top: 1rem;
 }
+@media screen and (max-width:768px){
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
 .formulario-covid{
     flex: 1;
 }
 .formulario-covid input{
     border-radius: 5px;
     margin: .2rem 0 .4rem 0;
+}
+@media screen and (max-width:768px){
+    .formulario-covid input{
+        width: 100%;
+    }
 }
 .formulario-input{
     padding: 2px;
@@ -386,6 +526,20 @@ section h3{
     width: 97%;
 }
 
+.ciudad-dirrecion{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+.dirrecion-respirar{
+    display: flex;
+    flex-direction:column;
+}
+.ciudad-respirar{
+    display: flex;
+    flex-direction:column;
+}
 .ciudad-sexo{
     display: flex;
     align-items: center;
@@ -425,21 +579,21 @@ section h3{
 }
 .cuestionario{
     display: flex;
+    flex-direction: column;
     align-content: center;
 }
-.preguntas{
-    width: 60em;
+.sintomas-covid{
     display: flex;
-    flex-direction: column;
-    margin-top: 0.4em;
+    justify-content: space-between;
+    margin-top: 0.2rem;
 }
-.preguntas label{
-    margin-top: 0.4em;
+@media screen  and (max-width:768px){
+    .sintomas-covid{
+        flex-direction: column;
+    }
 }
-.respuestas{
-    width: 30em;
-    margin-top: 0.5em;
-    margin-bottom: 2em;
+.sintomas-covid:first-child{
+    margin-top: 0.8rem;
 }
 .flex{
     display: flex;
@@ -454,11 +608,30 @@ section h3{
 .espacio{
     margin-right: 0.4em;
 }
-
-.boton-formulario{
+.selector-has-viajado{
     display: flex;
-    justify-content: flex-end;
 }
+.seleccionar-opcion{
+    display: flex;
+    flex-direction: row;
+}
+@media screen  and (max-width:768px){
+    .seleccionar-opcion{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .si,.no{
+        display: flex;
+        width: 3rem;
+        margin-top: 0.8rem;
+        margin-bottom: 1rem;
+    }
+}
+.boton-formulario{
+    margin-top: 2rem;
+    display: flex;
+}
+
 .btn{
     background-color: rgba(36, 129, 129, 0.705);
     border: none;
@@ -470,15 +643,57 @@ section h3{
     background-color:#1c5050 ;
     transition: background-color .2s;
 }
+.error{
+    color: red;
+    padding-top: 1rem;
+}
+
+@media screen and (max-width:768px){
+    .formulario-covid{
+        margin-top: 1rem;
+    }
+    .dni-telefono{
+        flex-direction: column;
+    }
+    .ciudad-sexo{
+        flex-direction: column;
+    }
+    .ciudad{
+        width: 97%;
+        padding-right: 0;
+    }
+    .has-viajado{
+        flex-direction: column;
+    }
+    .has-viajado div{
+        display: flex;
+        flex-direction: row;
+    }
+    .input-si{
+        display: flex;
+
+    }
+    .selector-has-viajado{
+        margin-top: 0.4rem;
+        margin-bottom: 1rem;
+    }
+}
 
 .medidas-precaucion{
     padding-top: 2em;
 }
 .imagenes-precaucion{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     margin-top: 1em;
 }
 
+@media screen and (max-width:768px){
+    .medidas-precaucion{
+        margin: auto;
+        width: 90%;
+    }
+}
 .imagenes{
     display: flex;
     flex-wrap: wrap;
@@ -488,7 +703,14 @@ section h3{
     width: 12em;
     height: 12em;
 }
-
+@media screen and (max-width:768px){
+    .imagenes{
+        justify-content: center;
+    }
+    .imagenes img{
+        padding-top: 1.5rem;
+    }
+}
 aside h3{
     text-align: center;
     text-transform: uppercase;
@@ -524,6 +746,7 @@ imagen-contacto{
     width: 200px;
 }
 
+
 .error {
     display: flex;
     flex-direction: column;
@@ -540,39 +763,58 @@ imagen-contacto{
     width: 62em;
     height: 35em;
 }
+
+@media screen and (max-width:768px){
+    .info-hospital{
+        flex-wrap: wrap;
+    }
+    .mapa-hospital{
+        width: 100%;
+        margin: auto;
+        padding: 1rem 0;
+    }
+}
+/*pagina de contacto*/
+
 .contacto{
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 100px
-    
-    
-}
-.contacto img{
-   width: 22em; 
-}
-.contacto article a{
-    text-decoration: none;
-    color: #000;
+    margin-top: 1.5rem;
 }
 .datos{
-    width: 50%;
-    position: relative;
-    margin: auto;
+    flex: 1;
+}
+.datos img{
+    width: 60%;
+}
+.datos a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.datos p{
+    font-weight: bold;
+    margin-top: 0.6rem;
 }
 
 .formulario-contacto{
-    
-    padding: 40px;
-    width: 45%;
-   flex-wrap: wrap;
-    list-style: none;
-    border-left: solid rgba(36, 129, 129, 0.705);
-    
+    flex: 1;
+    font-weight: bold;
+    text-align: justify;
+    width: 100%;
 }
+.formulario-contacto label{
+    margin-bottom: 0.4rem;
+}
+.input-formulario-contacto{
+    padding: 0.4rem;
+}
+.formulario-contacto textarea{
+    height: 3rem;
+    resize: none;
 
+}
 .formulario-contacto li{
+
    padding: 20px;
    list-style: none;
 }
@@ -595,3 +837,60 @@ imagen-contacto{
 .submit:hover{
     background: rgb(5, 82, 82);
 }
+.error{
+    display: flex;
+    padding-top: 1.4rem;
+    flex-direction: column;
+}
+.formulario-contacto li:first-child{
+    padding-top: 0;
+}
+
+.submit-formulario-contacto{
+    background-color:rgba(36, 129, 129, 0.76);
+    border-style: none;
+    color: white;
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 0.4rem;
+}
+.submit-formulario-contacto:hover{
+    background-color:rgba(36, 129, 129, 1);
+    transition: 0.4s;
+}
+
+@media screen and (max-width:790px){
+    .contacto{
+        flex-direction: column;
+    }
+    .datos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    .datos img{
+        width: 90%;
+    }
+    .formulario-contacto{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formulario-contacto ul{
+        width: 90%;
+    }
+    .formulario-contacto label{
+        margin-bottom: 0;
+    }
+    .formulario-contacto li{
+        margin-top: 0.4rem;
+    }
+    .submit-formulario-contacto{
+        width: 100%;
+    }
+}
+
+

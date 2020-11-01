@@ -92,17 +92,18 @@
                     </div>
                 </article>
                 <article class="formulario-covid">
+
                     <form action="#" onsubmit="return validar()">
                         <label for="nombre">Nombre y Apellido</label><br>
                         <input type="text" id="nombre"  name="nombre" class="input-nombre formulario-input"
                             placeholder="Ingresa tu nombre y apellido"><br>
                         <div class="dni-telefono">
                             <div class="dni">
-                                <label for="dni">Dni</label>
+                                <label for="dni">Dni *</label>
                                 <input type="number" id="dni" placeholder="Ingresa tu dni" class="formulario-input">
                             </div>
                             <div class="telefono">
-                                <label for="telefono">Telefono</label>
+                                <label for="telefono">Telefono *</label>
                                 <input type="tel" id="telefono" placeholder="Ingresa tu telefono"
                                     class="formulario-input">
                             </div>
@@ -124,27 +125,31 @@
                         </div>
                         <div class="pais-visitados">
                             <div class="has-viajado">
+
                                 <label for="viajo">¿Has viajado al exterior de la República Argentina?</label><br>
                                 <label for="si">SI</label>
                                 <input type="radio" id="si viaje" name="viajo" value="si" onchange="cambiar('viajo', 'paises')">
                                 <label for="no">NO</label>
                                 <input type="radio" id="no viaje" name="viajo" value="no" onchange="cambiar('viajo', 'paises')">
-                            </div>
+                            
+                                    </div>
+                                </div>
+
                             <div class="selector-pais">
                                 <label for="paises">Países Visitados:</label>
-                                <select id="paises">
-                                    <option value="brasil" disabled selected>selecionar opcion</option>
+                                <select id="paises" class="paises" disabled="">
+                                    <option value="0" disabled selected>selecionar opcion</option>
                                     <option value="brasil">brasil</option>
                                     <option value="uruguay">uruguay</option>
                                     <option value="chile">chile</option>
                                     <option value="paraguay">paraguay</option>
                                 </select>
                             </div>
-                        </div>
                         <div class="sintomas">
                             <label for="indicar"> Por favor, indica los síntomas que presentas:</label><br>
                             <div class="cuestionario">
                                 <div class="preguntas">
+
                                     <label for="fiebre">¿Tuviste Fiebre mayor a 38 grados?</label>
                                     <label for="cabeza">¿Tuviste Dolor de cabeza?</label>
                                     <label for="tos">¿Tuviste una tos persistente?</label>
@@ -185,9 +190,25 @@
                                         <label for="si" class="espacio">SI</label>
                                         <input type="radio" id="sin" value="no" name="respirar" value="no" onchange="cambiar('respirar', 'direccion')">
                                         <label for="no">No</label>
-                                    </div>
+
+                        
                                 </div>
-                            </div>
+                                <div class="ciudad-dirrecion" id="ciudadDirrecion">
+                                    <div class="dirrecion-respirar">
+                                        <label for="dirrecion">Dirrecion</label>
+                                        <input type="text" id="dirrecion-respirar" placeholder="Ingresa tu dirrecion"
+                                            class="formulario-input">
+                                    </div>
+                                    <div class="ciudad-respirar">
+                                        <label for="cuidad">Cuidad</label>
+                                        <input type="text" id="ciudad-respirar" placeholder="Ingresa tu cuidad"
+                                            class="formulario-input">
+
+                                    </div>
+                               
+                        </div>
+                        <div class="error" id="mensaje">
+
                         </div>
                         <div class="boton-formulario">
                             <input type="submit" class="btn" value="Enviar test">
@@ -235,20 +256,28 @@
 
     <footer>
         <div class="integrantes">
-            <h3>Datos del Grupo</h3>
+            <h3 class="titulo-footer">Datos del Grupo</h3>
             <p>Charlin Ignacio - 39207534</p>
             <p>Figueredo Agustin - 36797436</p>
-            <p>Perri Mariano  - 33698585</p>
+            <p>Perri Mariano - 33698585</p>
         </div>
         <div class="menu-inferior">
+
             <h3>Menu Inferior</h3>
             <a href="enfermedades.html" >Enfermedades</a>
             <a href="#" >Vacunas</a>
             <a href="mapa-hospital.html" >Hospitales</a>
             <a href="contacto.html">Contacto</a>
+
+            <h3 class="titulo-footer">Menu Inferior</h3>
+            <a href="enfermedades.html" target="_blank">Enfermedades</a>
+            <a href="#" target="_blank">Vacunas</a>
+            <a href="mapa-hospital.html" target="_blank">Hospitales</a>
+            <a href="#" target="_blank">Contacto</a>
+
         </div>
         <div class="redes-sociales">
-            <h3>Redes Sociales</h3>
+            <h3 class="titulo-footer">Redes Sociales</h3>
             <div class="logo-redes">
                 <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook uno"></i></a>
                 <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square dos"></i></a>
@@ -257,6 +286,7 @@
         </div>
 
     </footer>
+ 
 </body>
 
 </html>
