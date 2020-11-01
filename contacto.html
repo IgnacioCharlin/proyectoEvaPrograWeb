@@ -61,10 +61,10 @@
                <P>Telefono: 012401042</P>
                <p>Mail: <a href="medical23@gmail.com">medical23@gmail.com</a></p>  
            </article>
-           <article class="formulario-contacto">
+           <form class="formulario-contacto" action="" onsubmit="return validar()">
               <ul>
                   <li>
-                      <label for="nombre" class="label-formulario-contacto">Nombre </label>
+                      <label for="nombre" class="label-formulario-contacto">Nombre y Apellido (*) </label>
                       <input type="text" name="nombre" class="input-formulario-contacto" id="nombre">
                   </li>
                   <li>
@@ -77,8 +77,11 @@
                   </li>
                   <li>
                       <label for="consulta" class="label-formulario-contacto">Consulta </label>
-                      <textarea name="consulta" class="input-formulario-contacto" id="consulta">
-                      </textarea>
+                      <textarea name="consulta" class="input-formulario-contacto" id="consulta" onkeyup="contarCaracteres()" maxlength="1000"></textarea>
+                      <p>Te quedan <span id="caracteres">1000</span>/1000</p>
+                      <div class="error" id="mensaje">
+
+                    </div>
                   </li>
                   <li >
                      <div>
@@ -88,7 +91,7 @@
               </ul>
                
                
-           </article>
+           </form>
        </section>
         
     </main>
@@ -116,6 +119,7 @@
         </div>
 
     </footer>
+    <script src="jss/contacto.js"></script>
 </body>
 
 </html>
