@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,9 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
-
-
-    <title>Medical S.R.L</title>
+    <script src="js/contacto.js"></script>
+    <title>Contacto</title>
 </head>
 
 <body>
@@ -22,7 +21,6 @@
                 <li>
                     <a href="index.html" class="icono">
                         <i class="fab fa-medrt"></i>
-                       
                         <h1>Medical</h1>
                     </a>
                 </li>
@@ -54,53 +52,53 @@
                     <li><a href="contacto.html"> CONTACTO</a></li>
                 </ul>
             </div>
-            <div class="slider">
-                <img src="img/slider.jpg" alt="slider-pagina">
-            </div>
-            
         </nav>
     </header>
+    <main class="contenido-principal">
+      <h2 class="titulares">CONTACTO</h2>
+       <section class="contacto">
+          <article class="datos">
+               <img  src="img/emergencia.jpg" alt="">
+               <P>Telefono: 012401042</P>
+               <p>Mail: <a href="medical23@gmail.com">medical23@gmail.com</a></p>
+               
+               
+           </article>
+           <form action="#" onkeyup="return validar()" class="formulario-contacto">
+              <ul >
+                  <li>
+                      <label for="nombre">Nombre: </label>
+                      <input type="text" name="nombre" class="input" id="nombre">
+                  </li>
+                  <li>
+                      <label for="numero">Telefono : </label>
+                      <input type="text" name="numero" class="input" id="numero">
+                  </li>
+                  <li>
+                      <label for="mail">email: </label>
+                      <input type="email" name="mail" class="input" id="mail">
+                  </li>
+                  <li id="mensaje" class="error">
+                       
+                  </li>
+                  <li>
+                      <label for="consulta">Consulta: </label>
+                      <textarea name="consulta" class="input" id="consulta" maxlength="1000" onkeyup="contarCaracteres()"></textarea>
 
-    <main>
-        <section class="contenido-principal">
-            <h2 class="titulares">ACERCA</h2>
-            <article class="card">
-                <article>
-                   <a href="enfermedades.html" > 
-                    <img src="img/enfermedades.jpg" alt="Foto-enfermedad" >
-                    </a>
-                    <h3><a href="enfermedades.html" alt="Foto-enfermedad"> ENFERMEDADES</a></h3>
-                </article>
-                <article>
-                   <img src="img/vacuna.jpg" alt="foto-vacuna" href="#">
-                    <h3><a href="#"> VACUNAS</a></h3>
-                </article>
-
-                <article >
-                   <a href="mapa-hospital.html" >
-                    <img class="card1" src="img/hospital.jpg" alt="foto-hospital" >
-                    </a>
-
-                    <h3><a href="mapa-hospital.html"> MAPA DE HOSPITALES</a></h3>
-                </article>
-            </article>
-        </section>
-
-        <aside class="llama">
-            <div class="descripcion">
-                <p>si tenés sintomas de covid</p>
-                <h3>LLAMÁ AL</h3>
-            </div>
-            <div class="llamado">
-                <span class="material-icons">
-                    phone_in_talk
-                </span>
-                <H2>148</H2>
-            </div>
-        </aside>
+                      <p>Te quedan <span id="caracteres"></span>/1000</p>
+                  </li>
+                  <li >
+                     <div>
+                      <input type="submit" class="submit" value="Enviar" >
+                      </div>
+                  </li>
+              </ul>
+               
+               
+           </form>
+       </section>
+        
     </main>
-
-
     <footer>
         <div class="integrantes">
             <h3>Datos del Grupo</h3>
@@ -125,7 +123,6 @@
         </div>
 
     </footer>
-
 </body>
 
 </html>
