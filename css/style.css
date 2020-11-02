@@ -599,3 +599,8 @@ imagen-contacto{
 .submit:hover{
     background: rgb(5, 82, 82);
 }
+
+.caracteres {
+    margin: 0.5em;
+    text-align: right;
+}
