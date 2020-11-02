@@ -416,10 +416,15 @@ section h3{
 .has-viajado input{
     margin-right: 0.5em;
 }
-.selector-pais select, .direccion{
+.selector-pais select {
     width: 40%;
     display:none;
 }
+.direccion{
+    width: 100%;
+    display:none;
+}
+
 .sintomas{
     margin-top: 1.6em;
 }
@@ -529,7 +534,6 @@ imagen-contacto{
     flex-direction: column;
     font-size: 0.8em;
     color: red;
-    justify-content:center;
 }
 
 

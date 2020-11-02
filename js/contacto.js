@@ -7,26 +7,30 @@ function validar(){
     var error=false;
     var mensajesError="";
 
-    if (document.getElementById("nombre").value ==='') {
-		error= true
-		mensajeError+="*Ingrese su nombre "
-	}
+   
+    if (document.getElementById("nombre").value =='') {
+        error= true
+        mensajesError+="<p>*Ingrese su nombre</p>"
+    }
+    
     if(!regexTelefono.test(document.getElementById("numero").value)){
         error=true;
-        mensajesError+="Tiene que ingresar un telefono";
+        mensajesError+="<p>*Tiene que ingresar un telefono</p>";
     }
     if(!regexEmail.test(document.getElementById("mail").value)){
         error=true;
-        mensajesError+="Tiene que ser un email valido";
+        mensajesError+="<p>*Tiene que ser un email valido</p>";
     }
+    
 
     if(error){
         /*mostrar los mensajes de error*/
         document.getElementById("mensaje").innerHTML=mensajesError;
-        return false;
+        
     }else{
-        return false;
+        
     }
+    return false;
 }
 
 
