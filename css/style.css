@@ -11,8 +11,11 @@
     }
 }
 
-/** Header **/
 
+/** Header **/
+header{
+    width: 100%;
+}
 .contenedor{
     width: 100%;
     background-color: rgb(40, 105, 105);
@@ -113,6 +116,18 @@
     
 }
 
+@media screen and (max-width:768px){
+    a.desplegable{
+        display: flex;
+        height: 55px;
+        background-image: url(../img/hamburger.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        background-color:rgba(36, 129, 129, 0.705) ;
+        width: 100%;
+    }
+}
 
 /** Main Acerca  **/
 
@@ -666,7 +681,8 @@ section h3{
     }
     .has-viajado div{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
     }
     .input-si{
         display: flex;
