@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="jss/jquery.min.js"></script>
+    <script src="jss/hospitales.js"></script>
+    <script src="jss/funciones.js"></script>
     <title>Mapa</title>
 </head>
 
@@ -42,26 +45,54 @@
                     <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
                 </li>
             </ul>
-            <div class="barra-inferior-nav">
+            <a class="desplegable"></a>
+            <nav class="barra-inferior-nav">
                 <ul class="barra-inferior">
                     <li><a href="index.html"> HOME</a></li>
                     <li><a href="enfermedades.html"> ENFERMEDADES</a></li>
-                    <li><a href="#"> VACUNACION</a></li>
+                    <li><a href="calendario.html"> VACUNACION</a></li>
                     <li><a href="mapa-hospital.html"> HOSPITALES</a></li>
                     <li><a href="contacto.html"> CONTACTO</a></li>
                 </ul>
-            </div>
+            </nav>
         </nav>
     </header>
     <main>
         <section class="contenido-principal mapa-hospitales">
             <article class="mapa">
                 <h2 class="titulares">MAPA DE HOSPITALES DISPONIBLES</h2>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13131.87148464452!2d-58.5753246!3d-34.6302522!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef2dc611cc3efabb!2sPosadas!5e0!3m2!1ses-419!2sar!4v1602593224267!5m2!1ses-419!2sar"
-                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-                            
-                   </iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13131.87148464452!2d-58.5753246!3d-34.6302522!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef2dc611cc3efabb!2sPosadas!5e0!3m2!1ses-419!2sar!4v1602593224267!5m2!1ses-419!2sar"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+
+                </iframe>
+            </article>
+        </section>
+        <section class="informacion-hospitales">
+            <article class="popup">
+                <div class="informacion-popup">
+                    <h2 id="dirrecion"></h2>
+                    <h2 id="localidad"></h2>
+                    <a id="cerrar">Cerrar</a>
+                </div>
+            </article>
+            <article class="card-hospital">
+                <a href="#informacion-hospitales" class="link-hospital" id="posadas">
+                    <h3>Hospital Posadas</h3>
+                    <img src="img/posadas.jpg" alt="HospitalPosadas">
+                </a>
+            </article>
+            <article class="card-hospital">
+                <a href="#informacion-hospitales" class="link-hospital" id="pirovano">
+                    <h3>Hospital Pirovano</h3>
+                    <img src="img/pirovano.jpg" alt="HospitalPirovano">
+                </a>
+            </article>
+            <article class="card-hospital">
+                <a href="#informacion-hospitales" class="link-hospital" id="garrahan">
+                    <h3>Hospital Garrahan</h3>
+                    <img src="img/garrahan.png" alt="HospitalGarrahan">
+                </a>
             </article>
         </section>
     </main>
@@ -75,7 +106,7 @@
         <div class="menu-inferior">
             <h3 class="titulo-footer">Menu Inferior</h3>
             <a href="enfermedades.html" target="_blank">Enfermedades</a>
-            <a href="#" target="_blank">Vacunas</a>
+            <a href="calendario.html" target="_blank">Vacunas</a>
             <a href="mapa-hospital.html" target="_blank">Hospitales</a>
             <a href="#" target="_blank">Contacto</a>
         </div>

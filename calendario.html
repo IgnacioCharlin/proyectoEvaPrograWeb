@@ -10,7 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Contacto</title>
+    <link href='fullcalendar/core/main.css' rel='stylesheet'>
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet'>
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+    <script src="jss/calendario.js"></script>
+    <script src="jss/jquery-3.5.1.min.js"></script>
+    <script src="jss/funciones.js"></script>
+    <title>Calendario</title>
 </head>
 
 <body>
@@ -20,6 +27,7 @@
                 <li>
                     <a href="index.html" class="icono">
                         <i class="fab fa-medrt"></i>
+
                         <h1>Medical</h1>
                     </a>
                 </li>
@@ -42,7 +50,8 @@
                     <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
                 </li>
             </ul>
-            <div class="barra-inferior-nav">
+            <a class="desplegable"></a>
+            <nav class="barra-inferior-nav">
                 <ul class="barra-inferior">
                     <li><a href="index.html"> HOME</a></li>
                     <li><a href="enfermedades.html"> ENFERMEDADES</a></li>
@@ -50,47 +59,13 @@
                     <li><a href="mapa-hospital.html"> HOSPITALES</a></li>
                     <li><a href="contacto.html"> CONTACTO</a></li>
                 </ul>
-            </div>
+            </nav>
         </nav>
     </header>
-    <main class="contenido-principal">
-      <h2 class="titulares">CONTACTO</h2>
-       <section class="contacto">
-          <article class="datos">
-               <img  src="img/emergencia.jpg" alt="">
-               <P>Telefono: 012401042</P>
-               <p>Mail: <a href="medical23@gmail.com">medical23@gmail.com</a></p>  
-           </article>
-           <article class="formulario-contacto">
-              <ul>
-                  <li>
-                      <label for="nombre" class="label-formulario-contacto">Nombre </label>
-                      <input type="text" name="nombre" class="input-formulario-contacto" id="nombre">
-                  </li>
-                  <li>
-                      <label for="numero" class="label-formulario-contacto">Telefono </label>
-                      <input type="text" name="numero" class="input-formulario-contacto" id="numero">
-                  </li>
-                  <li>
-                      <label for="mail" class="label-formulario-contacto">email </label>
-                      <input type="email" name="mail" class="input-formulario-contacto" id="mail">
-                  </li>
-                  <li>
-                      <label for="consulta" class="label-formulario-contacto">Consulta </label>
-                      <textarea name="consulta" class="input-formulario-contacto" id="consulta">
-                      </textarea>
-                  </li>
-                  <li >
-                     <div>
-                      <input type="submit"  class="submit-formulario-contacto" value="Enviar">
-                      </div>
-                  </li>
-              </ul>
-               
-               
-           </article>
-       </section>
-        
+    <main>
+        <section class="contenedorCalendario contenido-principal">
+            <article id="calendario"></article>
+        </section>
     </main>
     <footer>
         <div class="integrantes">
